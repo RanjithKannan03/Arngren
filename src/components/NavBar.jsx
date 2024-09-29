@@ -131,7 +131,7 @@ const NavBar = () => {
                                 {
                                     mobileNavLinks.map((item, index) => {
                                         return (
-                                            <div key={item.name} className='flex items-center justify-center w-full'>
+                                            <div key={item.name} className='flex items-center justify-center w-full' onClick={() => { setIsOpen((prev) => !prev) }}>
                                                 {
                                                     item.icon
                                                 }
