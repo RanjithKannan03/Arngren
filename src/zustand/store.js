@@ -11,7 +11,7 @@ export const cartStore = create(
         }),
         {
             name: 'user-storage', // name of the item in the storage (must be unique)
-            storage: createJSONStorage(() => sessionStorage), // (optional) by default, 'localStorage' is used
+            storage: createJSONStorage(() => localStorage), // (optional) by default, 'localStorage' is used
         },
     )
 )
@@ -25,7 +25,7 @@ export const wishlistStore = create(
         }),
         {
             name: 'user-storage', // name of the item in the storage (must be unique)
-            storage: createJSONStorage(() => sessionStorage), // (optional) by default, 'localStorage' is used
+            storage: createJSONStorage(() => localStorage), // (optional) by default, 'localStorage' is used
         },
     )
 )
