@@ -5,7 +5,7 @@ import data from '@/utils/data';
 import Card from '@/components/Card';
 import categories from '@/utils/categories';
 
-const page = () => {
+const Page = () => {
     const [items, setItems] = useState([]);
     const [selectedCategories, setSelectedCategories] = useState([]);
     const [isOpen, setIsOpen] = useState(false);
@@ -103,4 +103,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
