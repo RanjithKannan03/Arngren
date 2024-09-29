@@ -3,6 +3,7 @@ import data from '@/utils/data';
 import Image from 'next/image';
 import { FaStar } from "react-icons/fa6";
 import AddToCartButton from '@/components/AddToCartButton';
+import AddToWishListButton from '@/components/AddToWishListButton';
 
 const page = ({ params }) => {
     const id = params.slug;
@@ -21,9 +22,11 @@ const page = ({ params }) => {
 
             <div className='flex flex-col justify-center w-full h-full gap-4 lg:w-1/2'>
 
-                <div className='w-full'>
+                <div className='flex items-center w-full gap-4'>
 
                     <span className='p-2 rounded-full bg-[#DB4444] text-white font-medium'>{item.category}</span>
+
+                    <AddToWishListButton item={item} />
 
                 </div>
 

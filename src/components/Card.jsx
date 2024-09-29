@@ -37,7 +37,7 @@ const Card = ({ item }) => {
 
             </Link>
 
-            <div className='absolute top-0 right-0 p-1 text-red-500 bg-gray-100 rounded-full lg:p-2'>
+            <div className='absolute top-0 right-0 p-1 text-red-500 bg-white rounded-full lg:p-2'>
 
                 {
                     wishlist.find((i) => i.uniq_id === item.uniq_id) ?
