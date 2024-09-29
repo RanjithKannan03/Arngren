@@ -1,4 +1,3 @@
-import Image from "next/image";
 import data from "@/utils/data";
 import Card from "@/components/Card";
 import Link from "next/link";
