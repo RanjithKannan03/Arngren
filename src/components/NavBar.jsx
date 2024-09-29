@@ -125,20 +125,22 @@ const NavBar = () => {
             <AnimatePresence mode='wait'>
                 {isOpen ?
                     (
-                        <motion.div variants={mobileNavVariant} initial="close" animate="open" exit="close" className='absolute top-0 left-0 z-30 flex flex-col items-center justify-center w-screen h-screen gap-8 bg-white'>
+                        <motion.div variants={mobileNavVariant} initial="close" animate="open" exit="close" className='absolute top-0 left-0 z-30 w-screen h-screen bg-white'>
 
-                            {
-                                mobileNavLinks.map((item, index) => {
-                                    return (
-                                        <div key={item.name} className='flex items-center justify-center w-full'>
-                                            {
-                                                item.icon
-                                            }
-                                        </div>
-                                    )
-                                })
+                            <div className='flex flex-col items-center justify-center w-full h-full gap-8'>
+                                {
+                                    mobileNavLinks.map((item, index) => {
+                                        return (
+                                            <div key={item.name} className='flex items-center justify-center w-full'>
+                                                {
+                                                    item.icon
+                                                }
+                                            </div>
+                                        )
+                                    })
 
-                            }
+                                }
+                            </div>
 
 
 

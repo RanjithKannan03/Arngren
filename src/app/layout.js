@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
       >
         <div className="w-screen h-screen">
 
-          <div className="sticky w-screen h-28">
+          <div className="w-screen h-28">
             <NavBar />
           </div>
 

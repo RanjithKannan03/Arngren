@@ -28,7 +28,7 @@ const Page = () => {
     }
 
     return (
-        <div className='flex flex-col gap-10 px-4 py-4 lg:py-8 md:px-8 lg:px-20 xl:px-48'>
+        <div className='relative flex flex-col gap-10 px-4 py-4 lg:py-8 md:px-8 lg:px-20 xl:px-48'>
 
 
             <div className='relative'>
